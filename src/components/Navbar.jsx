@@ -37,7 +37,7 @@ const Navbar = () => {
 
            
         </ul>
-        <button className="btnn " type="submit">
+        <button className="btnn mt-md-0 mt-2" type="submit">
             <a href="/">Get Started </a>
             </button>
             

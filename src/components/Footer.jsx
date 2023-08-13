@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='pt-5 '>
         <div className="container ">
             <div className="row mt-3 ">
-                <div className="col-md-3">
+                <div className="col-6 col-md-3">
                     <ul> <h5> Company</h5></ul>
                     <div className="text-color">
                     <a href="/">
@@ -25,9 +25,9 @@ const Footer = () => {
                     </a>
                     </div>                  
                 </div>
-                <hr className='d-md-none mt-4'/>
+                {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-md-3">
+                <div className="col-6 col-md-3">
                 <ul> <h5>Students</h5></ul>
                 <div className="text-color">
                 <a href="/">
@@ -39,9 +39,9 @@ const Footer = () => {
                 </div>
                     
                 </div>
-                <hr className='d-md-none mt-4'/>
+                {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-md-3">
+                <div className="col-6 col-md-3">
                 <ul> <h5>Explore</h5></ul>
                 <div className="text-color">
                 <a href="/">
@@ -56,9 +56,9 @@ const Footer = () => {
                 </div>
                    
                 </div>
-                <hr className='d-md-none mt-4'/>
+                {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-md-3">
+                <div className="col-6 col-md-3">
                 <ul> <h5>Legal & Help</h5></ul>
                 <div className="text-color">
                 <a href="/">
