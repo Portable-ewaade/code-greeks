@@ -1,6 +1,5 @@
-// import {Navbar, Footer} from '@/components/common'
 import { Navbar } from '@/components/common'
-import { Banner, Courses, MasterCoding } from '@/components/landing-page'
+import { Banner, Courses, MasterCoding, News, Review } from '@/components/landing-page'
 import Head from 'next/head'
 
 export default function Home() {
@@ -24,6 +23,8 @@ export default function Home() {
       
       <MasterCoding />
       <Courses />
+      <Review />
+      <News />
 
 
 

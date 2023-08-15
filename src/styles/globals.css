@@ -161,10 +161,54 @@ a {
   border-radius: 1rem;
   font-size: 0.7rem;
   color: #ffff;
-  /* padding: 0.5rem 0rem; */
+  padding: 0.3rem 0rem;
   background: transparent;
   width: 9rem;
 }
+.btnn3{
+  border: solid 0.5px #7d06a1;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  color: #ffff;
+  padding: 0.3rem 0rem;
+  background: transparent;
+  width: 14rem;
+}
+.round-bg{
+  border: solid 2px #B700EE;
+  border-radius: 100%;
+  background: #FCF0FF;
+  width: 4rem;
+  height: 4rem;
+}
+.fullstack-card{
+  width: 35rem;
+}
+.review-bg{
+  background-color: #0F0113;
+}
+.review-card{
+  width: 83%;
+  height: 22rem;
+  margin: 4.5rem 0rem;
+  border: 0.7px solid #B700EE !important;
+ /* padding-bottom: 20rem; */
+}
+.news-card{
+  /* width: "27rem"; */
+}
+
+@media screen and (max-width: 600px){
+  .fullstack-card{
+    width: 20rem;
+    margin: 4rem 0rem;
+  }
+  .news-card{
+    width: 23rem !important;
+  }
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   html {

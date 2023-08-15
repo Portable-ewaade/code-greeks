@@ -5,9 +5,9 @@ import 'animate.css';
 
 const masterCoding = () => {
     return ( 
-        <section className=" position-relative pb-5" style={{background: "#0F0113"}}>
-            <div className="container animate__bounceIn">
-                <div className="row ms-1">
+        <section className=" position-relative pb-5 " style={{background: "#0F0113"}}>
+            <div className="container animate__bounceIn pb-5 ps-md-4">
+                <div className="row pb-5 ms-1">
                     <div className="col-md-6 mt-md-5">
                         <div className="row container">
                             <div className="col-6 pt-5 text-center ">
