@@ -192,10 +192,7 @@ a {
   height: 22rem;
   margin: 4.5rem 0rem;
   border: 0.7px solid #B700EE !important;
- /* padding-bottom: 20rem; */
-}
-.news-card{
-  /* width: "27rem"; */
+
 }
 
 @media screen and (max-width: 600px){
