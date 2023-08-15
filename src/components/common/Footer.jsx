@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="row mt-3 ">
                 <div className="col-6 col-md-3">
                     <ul> <h5> Company</h5></ul>
-                    <div className="text-color">
+                    <div className="footer-text-color">
                     <a href="/">
                         <ul> About</ul>
                     </a>
@@ -29,7 +29,7 @@ const Footer = () => {
 
                 <div className="col-6 col-md-3">
                 <ul> <h5>Students</h5></ul>
-                <div className="text-color">
+                <div className="footer-text-color">
                 <a href="/">
                         <ul>Student Reviews</ul>
                     </a>
@@ -43,7 +43,7 @@ const Footer = () => {
 
                 <div className="col-6 col-md-3">
                 <ul> <h5>Explore</h5></ul>
-                <div className="text-color">
+                <div className="footer-text-color">
                 <a href="/">
                         <ul>Tech News</ul>
                     </a>
@@ -60,7 +60,7 @@ const Footer = () => {
 
                 <div className="col-6 col-md-3">
                 <ul> <h5>Legal & Help</h5></ul>
-                <div className="text-color">
+                <div className="footer-text-color">
                 <a href="/">
                         <ul>Privacy Policy</ul>
                     </a>
@@ -104,6 +104,6 @@ const Footer = () => {
 
 export default Footer
 
-{/* <a href="#" class="position-absolute position-fixed bottom-0 end-0 top-25 m-4 arrow-up">
-<i class="bi bi-arrow-up-circle h2"></i>
+{/* <a href="#" className="position-absolute position-fixed bottom-0 end-0 top-25 m-4 arrow-up">
+<i className="bi bi-arrow-up-circle h2"></i>
 </a> */}

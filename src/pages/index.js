@@ -1,5 +1,6 @@
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+// import {Navbar, Footer} from '@/components/common'
+import { Navbar } from '@/components/common'
+import { Banner, Courses, MasterCoding } from '@/components/landing-page'
 import Head from 'next/head'
 
 export default function Home() {
@@ -16,15 +17,14 @@ export default function Home() {
         backgroundImage: "url('../../../assets/banner-bg.png')",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: 'center' }}>
-        <Navbar />
-        
-        <div>
-            {/* <h1 >Hello World</h1> */}
-        </div>
-
-        <Footer />
+        backgroundPosition: 'center' }}>    
+        <Navbar />     
+        <Banner />
       </main>
+      
+      <MasterCoding />
+      <Courses />
+
 
 
 

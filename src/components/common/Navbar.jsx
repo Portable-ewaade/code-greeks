@@ -3,12 +3,12 @@ import { BiMenu } from 'react-icons/bi'
 
 const Navbar = () => {
   return (
-   <section className='mb-4'>
+   <section className='pb-4'>
      <div className='container'>
      <nav className="navbar navbar-expand-lg pt-2">
      <div className="container-fluid">
         <a className="navbar-brand" href="/">
-            <img src="../../../assets/logo.png" alt="..." className='img-fluid me-4'
+            <img src="../../../assets/logo.png" alt="..." className='img-fluid my-2 ms-md-4'
             style={{width:"6rem", height:"3rem"}}/>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,19 +19,19 @@ const Navbar = () => {
      <div className="collapse navbar-collapse mt-4 me-5" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto fs-normal ms-4 ms-md-0 fw-medium ">
             <li className="nav-item me-4 ">
-            <Link href="/" class="nav-link text-white active font-weight-600"> HOME
+            <Link href="/" className="nav-link text-white active font-weight-600"> HOME
             </Link>
             </li>
             <li className="nav-item me-4 ">
-            <Link href="/" class="nav-link text-white active"> ABOUT
+            <Link href="/main" className="nav-link text-white active"> ABOUT
             </Link>
             </li>
             <li className="nav-item me-4 ">
-            <Link href="/" class="nav-link text-white active"> REVIEW
+            <Link href="/" className="nav-link text-white active"> REVIEW
             </Link>
             </li>
             <li className="nav-item me-4 ">
-            <Link href="/" class="nav-link text-white active"> CONTACT
+            <Link href="/" className="nav-link text-white active"> CONTACT
             </Link>
             </li>
 

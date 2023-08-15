@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -93,6 +95,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -133,7 +136,16 @@ a {
   font-weight: light;
 }
 .text-color{
+  color: #E08CF9 !important;
+}
+.bg-color{
+  background-color: #280934 !important;
+}
+.footer-text-color{
   color: #c4c1c5 !important;
+}
+.card-border{
+  border: 0.7px solid #B700EE !important;
 }
 .btnn{
   border: solid 0.5px #B700EE;
@@ -141,6 +153,15 @@ a {
   font-size: 0.7rem;
   color: #ffff;
   padding: 0.5rem 0rem;
+  background: transparent;
+  width: 9rem;
+}
+.btnn2{
+  border: solid 0.5px #7d06a1;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  color: #ffff;
+  /* padding: 0.5rem 0rem; */
   background: transparent;
   width: 9rem;
 }
