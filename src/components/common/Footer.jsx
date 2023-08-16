@@ -1,5 +1,6 @@
-import { BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
-
+import { Col, Container, Row } from 'react-bootstrap';
+import { BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
+// import  "bootstrap";
 const Footer = () => {
   return (
     <section className=''  style={{
@@ -9,11 +10,11 @@ const Footer = () => {
         backgroundPosition: 'center' }}>
 
         <div className='pt-5 '>
-        <div className="container ">
-            <div className="row mt-3 ">
-                <div className="col-6 col-md-3">
-                    <ul> <h5> Company</h5></ul>
-                    <div className="footer-text-color">
+        <Container>
+            <Row className="mt-3 ">
+                <Col  xs={6} md={3} xl={3}>
+                    <ul> <h5 className='text-white'> Company</h5></ul>
+                    <div className="footer-text-color fs-small">
                     <a href="/">
                         <ul> About</ul>
                     </a>
@@ -24,12 +25,12 @@ const Footer = () => {
                         <ul>Gallery</ul>
                     </a>
                     </div>                  
-                </div>
+                </Col>
                 {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-6 col-md-3">
-                <ul> <h5>Students</h5></ul>
-                <div className="footer-text-color">
+                <Col  xs={6} md={3} xl={3}>
+                <ul> <h5 className='text-white'>Students</h5></ul>
+                <div className="footer-text-color fs-small">
                 <a href="/">
                         <ul>Student Reviews</ul>
                     </a>
@@ -38,12 +39,12 @@ const Footer = () => {
                     </a>
                 </div>
                     
-                </div>
+                </Col>
                 {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-6 col-md-3">
-                <ul> <h5>Explore</h5></ul>
-                <div className="footer-text-color">
+                <Col  xs={6} md={3} xl={3}>
+                <ul> <h5 className='text-white'>Explore</h5></ul>
+                <div className="footer-text-color fs-small">
                 <a href="/">
                         <ul>Tech News</ul>
                     </a>
@@ -55,12 +56,12 @@ const Footer = () => {
                     </a>
                 </div>
                    
-                </div>
+                </Col>
                 {/* <hr className='d-md-none mt-4'/> */}
 
-                <div className="col-6 col-md-3">
-                <ul> <h5>Legal & Help</h5></ul>
-                <div className="footer-text-color">
+                <Col  xs={6} md={3} xl={3}>
+                <ul> <h5 className='text-white'>Legal & Help</h5></ul>
+                <div className="footer-text-color fs-small">
                 <a href="/">
                         <ul>Privacy Policy</ul>
                     </a>
@@ -72,14 +73,14 @@ const Footer = () => {
                     </a>
                 </div>
                     
-                </div>
-                <div className="col-md-11 ms-md-4">
+                </Col>
+                <Col  md={3} className="ms-md-4">
                     <hr />
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     
-            <div className="container text-center pt-4 pb-5">
+            <Container className=" text-center text-white pt-4 pb-5">
                 <img src="../../../assets/logo.png" alt="..." className='img-fluid mb-1' style={{width: "8rem", height: "auto"}}/>
                 <h6 className='letter-space mb-2'> CODE GEEKS 9JA</h6>
                 <p className='fs-small'>Copyright &copy; 2023, Code Geeks 9ja. All rights reserverd. </p>
@@ -95,7 +96,7 @@ const Footer = () => {
                     < BsLinkedin />
                     </a>
                 </div>
-            </div>
+            </Container>
         </div>
     </section>
    

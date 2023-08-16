@@ -1,57 +1,58 @@
 import Image from "next/image";
 import { BsLaptop } from "react-icons/bs";
 import 'animate.css';
+import { Col, Container, Row } from "react-bootstrap";
 // import TrackVisibility from "react-on-screen";
 
 const masterCoding = () => {
     return ( 
         <section className=" position-relative pb-5 " style={{background: "#0F0113"}}>
-            <div className="container animate__bounceIn pb-5 ps-md-4">
-                <div className="row pb-5 ms-1">
-                    <div className="col-md-6 mt-md-5">
-                        <div className="row container">
-                            <div className="col-6 pt-5 text-center ">
+            <Container className=" animate__bounceIn pb-5 ps-md-4">
+                <Row className=" pb-5 ms-1 text-white">
+                    <Col md={6} className=" mt-md-5">
+                        <Row className="container">
+                            <Col md={6} xs={6} className="pt-5 text-center ">
                                 <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
                                 <BsLaptop style={{width: "3rem", height:"auto"}}/>
                                 <p className="fs-small mt-2">Break Something</p>
                                 </div>
-                                <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg1.png" width="143" height="100" alt=".."/>
-                                </div>
-                             </div>
+                                <Col md={6} xs={6} className=" mt-5">
+                                <Image src="/assets/card-bg1.png" width="132" height="100" alt=".."/>
+                                </Col>
+                             </Col>
                                                      
-                            <div className="col-6 pt-5 text-center">
-                                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                                <BsLaptop style={{width: "3rem", height:"auto"}}/>
-                                <p className="fs-small mt-2">Fixed Something</p>
-                                </div>
-                                <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg2.png" width="139" height="100" alt="..."/>
-                                </div>
-                            </div>  
+                                <Col md={6} xs={6}className=" pt-5 text-center">
+                                    <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                                    <BsLaptop style={{width: "3rem", height:"auto"}}/>
+                                    <p className="fs-small mt-2">Fixed Something</p>
+                                    </div>
+                                    <Col md={6} xs={6}className="mt-5">
+                                    <Image src="/assets/card-bg2.png" width="131" height="100" alt="..."/>
+                                    </Col>
+                                </Col>  
 
-                            <div className="col-6 text-center mt-5">
+                            <Col md={6} xs={6} className="text-center mt-5">
                                 <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
                                 <BsLaptop style={{width: "3rem", height:"auto"}}/>
                                 <p className="fs-small mt-2">Just Do Whatever</p>
                                 </div>
-                                <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg3.png" width="147" height="91" alt="..." className="mt-2"/>
-                                </div>
-                            </div>                            
-                            <div className="col-6 text-center mt-5">
+                                <Col md={6} xs={6} className=" mt-5">
+                                <Image src="/assets/card-bg3.png" width="134" height="91" alt="..." className="mt-2"/>
+                                </Col>
+                            </Col>                            
+                            <Col md={6} xs={6} className="text-center mt-5">
                                 <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
                                 <BsLaptop style={{width: "3rem", height:"auto"}}/>
                                 <p className="fs-small mt-2">Practice And Code <br /> Everyday</p>
                                 </div>
-                                <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg4.png" width="153" height="94" alt="..." className="mt-2"/>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
+                                <Col md={6} xs={6} className="mt-5">
+                                <Image src="/assets/card-bg4.png" width="139" height="94" alt="..." className="mt-2"/>
+                                </Col>
+                            </Col>                            
+                        </Row>
+                    </Col>
 
-                    <div className="col-md-6 mt-5">
+                    <Col md={6} className=" mt-5">
                       <div className="border card-border rounded-3 ps-3 pt-3 fs-small mt-md-5 text-start" style={{width: "15rem", height: "auto"}}>
                             <h6 className="fs-small lh-base">Wondering Our Secret <br /> To Making you</h6>
                             <h4 className="text-color fw-bold">Master Coding?</h4>
@@ -64,8 +65,10 @@ const masterCoding = () => {
 
                             <a href="/" className="fs-small footer-text-color mt-2">Read more</a>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
+
+
                 {/* <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__bounceIn" : ""}>
@@ -130,7 +133,7 @@ const masterCoding = () => {
                 </div>
                 </div>}
                  </TrackVisibility> */}
-            </div>
+            </Container>
         </section>
      );
 }
