@@ -19,8 +19,7 @@ const banner = () => {
               designed <br className="d-none d-md-block" /> just for you.. Master coding through
               proper mentoring
             </p>
-            <button className="btnn rounded-2 text-white fs-small mb-5 mt-4">
-              
+            <button className="btnn rounded-2 text-white fs-small mb-5 mt-4">            
               <BsPencilSquare /> Get Started
             </button>
           </div>
