@@ -1,18 +1,17 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 // import  "bootstrap";
 const Footer = () => {
   return (
-    <section className=''  style={{
-        backgroundImage: "url('../../../assets/footer-bg.png')",
+    <section className='pt-3'  style={{
+        backgroundImage: "url('/assets/footer-bg.png')",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center' }}>
 
-        <div className='pt-5 '>
-        <Container>
-            <Row className="mt-3 ">
-                <Col  xs={6} md={3} xl={3}>
+        <div className='bx-container mx-auto'>
+            <Row >
+                <Col xs={6} md={3} xl={3}>
                     <ul> <h5 className='text-white'> Company</h5></ul>
                     <div className="footer-text-color fs-small">
                     <a href="/">
@@ -74,14 +73,13 @@ const Footer = () => {
                 </div>
                     
                 </Col>
-                <Col  md={3} className="ms-md-4">
+                <Col md={3} className="ms-md-4">
                     <hr />
                 </Col>
             </Row>
-        </Container>
     
-            <Container className=" text-center text-white pt-4 pb-5">
-                <img src="../../../assets/logo.png" alt="..." className='img-fluid mb-1' style={{width: "8rem", height: "auto"}}/>
+            <div className=" text-center text-white pb-md-1 pb-3 ">
+                <img src="/assets/logo.png" alt="..." className='img-fluid mb-1' style={{width: "8rem", height: "auto"}}/>
                 <h6 className='letter-space mb-2'> CODE GEEKS 9JA</h6>
                 <p className='fs-small'>Copyright &copy; 2023, Code Geeks 9ja. All rights reserverd. </p>
 
@@ -96,7 +94,7 @@ const Footer = () => {
                     < BsLinkedin />
                     </a>
                 </div>
-            </Container>
+            </div>
         </div>
     </section>
    
