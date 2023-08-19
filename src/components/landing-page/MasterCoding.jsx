@@ -7,8 +7,8 @@ import { Col, Container, Row } from "react-bootstrap";
 const masterCoding = () => {
     return ( 
         <section className=" position-relative pb-5 " style={{background: "#0F0113"}}>
-            <Container className=" animate__bounceIn pb-5 ps-md-4">
-                <Row className=" pb-5 ms-1 text-white">
+               <div className="home-container">
+               <Row className=" pb-5 ms-1 text-white">
                     <Col md={6} className=" mt-md-5">
                         <Row className="container">
                             <Col md={6} xs={6} className="pt-5 text-center ">
@@ -51,23 +51,27 @@ const masterCoding = () => {
                             </Col>                            
                         </Row>
                     </Col>
+                    <Col md={2}></Col>
 
-                    <Col md={6} className=" mt-5">
+                    <Col md={4} className=" mt-5">
                       <div className="border card-border rounded-3 ps-3 pt-3 fs-small mt-md-5 text-start" style={{width: "15rem", height: "auto"}}>
                             <h6 className="fs-small lh-base">Wondering Our Secret <br /> To Making you</h6>
                             <h4 className="text-color fw-bold">Master Coding?</h4>
                         </div>
                         <div className= "mt-4">
-                            <h6 className="fs-small lh-base fw-bold my-4">We Guide You To Make The <br /> Following A Habit</h6>
+                            <h6 className="fs-large lh-base fw-bold my-4">We Guide You To Make The <br /> Following A Habit</h6>
                         </div>
                         <div className="mt-md-5" style={{width: "22rem", height: "auto"}}>
-                            <p className="fs-small footer-text-color">We do not leave your side. And we do not leave you to go through the dark learning times alone. We share the burden; practically stay with you as we push you loads of carefully crafted exercises to ensure that daily coding naturally becomes a habit for you, and at ease. A very good habit! Indeed, to master coding, you do not need to be intelligent or smart. You only need to keep practicing under proper mentoring and guidance; build a strong attitude and resilience and they all come together in the end.</p>
+                            <p className="fs-normal footer-text-color">We do not leave your side. And we do not leave you to go through the dark learning times alone. We share the burden; practically stay with you as we push you loads of carefully crafted exercises to ensure that daily coding naturally becomes a habit for you, and at ease. A very good habit! Indeed, to master coding, you do not need to be intelligent or smart. You only need to keep practicing under proper mentoring and guidance; build a strong attitude and resilience and they all come together in the end.</p>
 
                             <a href="/" className="fs-small footer-text-color mt-2">Read more</a>
                         </div>
                     </Col>
                 </Row>
 
+               </div>
+            <Container className=" animate__bounceIn pb-5 ps-md-4">
+              
 
                 {/* <TrackVisibility>
               {({ isVisible }) =>

@@ -105,6 +105,7 @@ a {
   color: inherit !important;
   
 }
+/* sizing */
 .fs-small{
   font-size: 12px !important;
 }
@@ -138,6 +139,8 @@ a {
   letter-spacing: 10px;
   font-weight: light;
 }
+
+/* colors */
 .text-color{
   color: #E08CF9 !important;
 }
@@ -147,11 +150,22 @@ a {
 .footer-text-color{
   color: #c4c1c5 !important;
 }
+/* banner session */
+.home-container{
+  width: 85% !important;
+  /* margin: 2rem 8rem !important; */
+  margin: auto !important;
+
+}
+/* .one {
+  grid-column: 2 / 8;
+  grid-row: 1;
+} */
 .card-border{
   border: 0.7px solid #B700EE !important;
 }
 .btnn{
-  border: solid 0.5px #B700EE;
+  border: solid 1px #B700EE;
   border-radius: 1rem;
   font-size: 0.7rem;
   color: #ffff;
@@ -198,6 +212,8 @@ a {
 
 }
 
+
+
 @media screen and (max-width: 600px){
   .fullstack-card{
     width: 20rem;
@@ -208,7 +224,17 @@ a {
   }
 }
 
+/* Mobile: */
+@media (max-width:500px) {}
 
+/* Tablet */
+@media (min-width:501px) AND (max-width:991px) {}
+
+/* Laptops */
+@media (min-width:992px) AND (max-width:1199px) {}
+
+/* Larger screens */
+@media (min-width:1200px) AND (max-width:1500px) {}
 /* 
 @media (prefers-color-scheme: dark) {
   html {
