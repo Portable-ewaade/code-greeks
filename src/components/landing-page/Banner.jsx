@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import 'animate.css';
 import { Col, Row } from 'react-bootstrap';
 import { BsPencilSquare } from 'react-icons/bs';
