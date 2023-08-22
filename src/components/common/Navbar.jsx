@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { BiMenu } from 'react-icons/bi';
+import Link from "next/link";
+import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
             src="/assets/logo.png"
             alt="..."
             className="img-fluid my-2 ms-md"
-            style={{ width: '6rem', height: '3rem' }}
+            style={{ width: "6rem", height: "3rem" }}
           />
         </a>
         <button
@@ -28,10 +28,16 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+      <div
+        className="collapse navbar-collapse mt-4"
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav me-auto fs-normal ms-4 ms-md-0 fw-medium ">
           <li className="nav-item me-4 ">
-            <Link href="/" className="nav-link text-white active font-weight-600">
+            <Link
+              href="/"
+              className="nav-link text-white active font-weight-600"
+            >
               HOME
             </Link>
           </li>
@@ -52,7 +58,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button className="btnn mt-md-0 mt-2" type="submit">
-          <a href="/">Get Started </a>
+          <a href="/register">Get Started </a>
         </button>
       </div>
     </nav>
