@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import { Navbar } from "@/components/common";
 
-export const review = () => {
+export const reviewsCard = () => {
   return (
     <>
       <Navbar />
@@ -168,3 +168,4 @@ export const review = () => {
     </>
   );
 };
+export default reviewsCard;

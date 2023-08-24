@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import { Navbar } from "@/components/common";
 
-const review = () => {
+const index = () => {
   return (
     <section
       style={{
@@ -171,4 +171,4 @@ const review = () => {
   );
 };
 
-export default review;
+export default index;
