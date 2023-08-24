@@ -1,12 +1,6 @@
-import { Navbar } from "../components/common";
-import {
-  Banner,
-  CoursesSection,
-  MasterCoding,
-  News,
-  Review,
-} from "../components/landing-page";
-import Head from "next/head";
+import { Navbar } from '../components/common';
+import { Banner, CoursesSection, MasterCoding, News, Review } from '../components/landing-page';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -21,10 +15,10 @@ export default function Home() {
       <main
         style={{
           backgroundImage: "url('../../../assets/home-banner.png')",
-          backgroundColor: "#121212",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundColor: '#121212',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         <Navbar />

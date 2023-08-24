@@ -1,19 +1,20 @@
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 
 const review = () => {
   return (
-    <div className=" review-bg ">
+    <div className=" review-bg p-0">
       <div className="position-relative py-5 bx-container">
+        {/* <Container className="py-5"> */}
         <div className=" review-card rounded-4 position-absolute top-0 start-50 translate-middle">
-          <Row className="">
+          <Row>
             <Col md={6}>
               <Row>
                 <Col>
                   <Image
                     src="/assets/trainer1.png"
-                    alt="..."
+                    alt="Code Geeks 9ja"
                     width="173"
                     height="200"
                     className="img-fluid"
@@ -22,7 +23,7 @@ const review = () => {
                 <Col>
                   <Image
                     src="/assets/trainer2.png"
-                    alt="..."
+                    alt="Code Geeks 9ja"
                     width="175"
                     height="200"
                     className="img-fluid"
@@ -48,10 +49,11 @@ const review = () => {
             </Col>
           </Row>
         </div>
+        {/* </Container> */}
       </div>
 
-      <div className="pt-5 mt-5 bx-container">
-        <Row className="mt-5 mt-md-0 pb-5 px-md-4 ">
+      <div className="pt-5 mt-5 pb-5 bx-container">
+        <Row className="mt-5 mt-md-0 mb-5 px-md-4 ">
           <div className="text-center mt-md-0 mt-5">
             <div className="my-4">
               <div className="pt-5 pt-md-0 text-white">
@@ -65,7 +67,7 @@ const review = () => {
           <Col md={4} className="mb-3 text-center px-4 px-md-2">
             <div className="card border border-2 bg-transparent h-100 p-3 text-white">
               <div className="card-title">
-                <img src="/assets/star-icon.png" alt="" />
+                <img src="/assets/star-icon.png" alt="Code Geeks 9ja" />
               </div>
               <p className="fs-small footer-text-color">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -81,7 +83,7 @@ const review = () => {
           <Col md={4} className="mb-3 text-center px-4 px-md-2">
             <div className="card border border-2 bg-transparent h-100 p-3 text-white py-auto">
               <div className="card-title">
-                <img src="/assets/star-icon.png" alt="" />
+                <img src="/assets/star-icon.png" alt="Code Geeks 9ja" />
               </div>
               <p className="fs-small footer-text-color">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -95,7 +97,7 @@ const review = () => {
           <Col md={4} className="mb-3 text-center px-4 px-md-2">
             <div className="card border border-2 bg-transparent h-100 p-3 text-white">
               <div className="card-title">
-                <img src="/assets/star-icon.png" alt="" />
+                <img src="/assets/star-icon.png" alt="Code Geeks 9ja" />
               </div>
               <p className="fs-small footer-text-color">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -108,7 +110,7 @@ const review = () => {
           </Col>
 
           <div className="text-center text-white">
-            <a href="/" className="fs-normal mt-2 mb-3">
+            <a href="/" className="fs-normal mt-2 ">
               SEE MORE <BsArrowRight />
             </a>
           </div>

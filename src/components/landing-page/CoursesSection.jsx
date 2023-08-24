@@ -14,7 +14,7 @@ const courses = () => {
     >
       <div className="position-relative">
         <Container className="p-5">
-          <div className="card fullstack-card text-center p-4 position-absolute  top-0 start-50 translate-middle">
+          <div className="card dark-shadow-lg rounded-5 fullstack-card text-center p-4 position-absolute  top-0 start-50 translate-middle">
             <div className="">
               <button className="btnn2 mt-md-0 mt-2" type="submit">
                 <a className="text-color fs-small fw-bold ">STARTING SOON</a>
@@ -34,7 +34,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/html.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className="p-3 img-fluid"
                     />
                   </div>
@@ -43,7 +43,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/css.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className="p-3 img-fluid"
                     />
                   </div>
@@ -52,7 +52,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/javascript.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className="p-3 img-fluid"
                     />
                   </div>
@@ -61,7 +61,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/reactjs.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className="mt-2 img-fluid"
                     />
                   </div>
@@ -70,7 +70,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/node.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className="mt-2 img-fluid"
                     />
                   </div>
@@ -79,7 +79,7 @@ const courses = () => {
                   <div className="round-bg">
                     <img
                       src="/assets/mongodb.png"
-                      alt="..."
+                      alt="Code Geeks 9ja"
                       className=" mt-2 img-fluid"
                     />
                   </div>
@@ -100,7 +100,7 @@ const courses = () => {
             </button>
           </div>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color px-4 py-3 py-md-4 text-white h-100 ">
+            <div className="card border bg-color px-4 py-3 py-md-4 text-white dark-shadow-lg ">
               <h3>
                 <BsPersonFill />
               </h3>
@@ -113,7 +113,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white">
+            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
               <h3>
                 <BsPersonFill />
               </h3>
@@ -126,7 +126,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white h-100 ">
+            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
               <h3>
                 <BsPersonFill />
               </h3>
@@ -139,7 +139,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white h-100 ">
+            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
               <h3>
                 <BsPersonFill />
               </h3>

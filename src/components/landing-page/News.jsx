@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
+import { Col, Container, Row } from "react-bootstrap";
+import { BsArrowRight, BsStar } from "react-icons/bs";
 import { newsContent } from "../../../src/data/mockData";
 
 const news = () => {
@@ -14,21 +14,21 @@ const news = () => {
         </div>
 
         <Row className="pb-5 mt-5">
-          <Col md={5} className="px-0 mx-auto">
+          <Col md={5}>
             <div
               className="card bg-transparent px-md-5 px-4 border card-border rounded-3 news-card"
               style={{ width: "27rem" }}
             >
               {newsContent
                 .filter((news) => news.id === 1)
-                .map((news) => {
+                .map((news, index) => {
                   return (
-                    <div key={news.id}>
+                    <div key={index}>
                       <Image
                         src={`/assets/${news.img}`}
                         width="320"
                         height="298"
-                        alt="..."
+                        alt="Code Geeks 9ja"
                         className="mt-3"
                       />
                       {/* <div>
@@ -54,23 +54,23 @@ const news = () => {
                 })}
             </div>
           </Col>
-          <Col md={7} className="mt-4 mt-md-0 mb-3 px-0 mx-auto">
+          <Col md={7} className="mt-4 mt-md-0 mb-3">
             <div
-              className="card bg-transparent px-md- px-4 border card-border rounded-3 news-card"
+              className="card bg-transparent px-md-2 px-4 border card-border rounded-3 news-card"
               style={{ width: "100%" }}
             >
-              <Row className="p-0 m-0">
+              <Row>
                 {newsContent
                   .filter((news) => news.id !== 1)
-                  .map((news) => {
+                  .map((news, index) => {
                     return (
-                      <Col md={6}>
-                        <div key={news.id}>
+                      <Col md={6} key={index}>
+                        <div>
                           <img
                             src={`/assets/${news.img}`}
                             width="100%"
                             height="298"
-                            alt="..."
+                            alt="Code Geeks 9ja"
                             className="mt-3"
                           />
                           <div className="card-body">

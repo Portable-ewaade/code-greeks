@@ -1,5 +1,5 @@
-// import Image from 'next/image';
-// import { BsLaptop } from 'react-icons/bs';
+import Image from "next/image";
+import { BsLaptop } from "react-icons/bs";
 import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
 // import TrackVisibility from "react-on-screen";
@@ -14,7 +14,7 @@ const masterCoding = () => {
         <Row className="pb-5 text-white pe-md-0 align-items-center">
           <Col md={6} className=" mt-5 mb-5 mb-md-0">
             <div
-              className="border card-border rounded-3 ps-3 pt-3 fs-small mt-md-5 text-start"
+              className=" card-border rounded-3 ps-3 pt-3 fs-small mt-md-5 text-start"
               style={{ width: "15rem", height: "auto" }}
             >
               <h6 className="fs-small lh-base">In order to truly</h6>
@@ -50,8 +50,12 @@ const masterCoding = () => {
             </div>
           </Col>
 
-          <Col md={6} className=" mt-md-5 ps-md-5 home-image">
-            <img src="/assets/computer.jpeg" alt="Code Geeks 9ja" />
+          <Col md={6} className=" mt-md-5 ps-md-5 home-image ">
+            <img
+              src="/assets/computer.jpeg"
+              alt="Code Geeks 9ja"
+              className="rounded-5 shadow-5 shadow-red"
+            />
             {/* <Row className="container">
               <Col md={6} xs={6} className="pt-5 text-center ">
                 <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
@@ -59,7 +63,7 @@ const masterCoding = () => {
                   <p className="fs-small mt-2">Break Something</p>
                 </div>
                 <Col md={6} xs={6} className=" mt-5">
-                  <Image src="/assets/card-bg1.png" width="132" height="100" alt=".." />
+                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
                 </Col>
               </Col>
 
@@ -69,7 +73,7 @@ const masterCoding = () => {
                   <p className="fs-small mt-2">Fixed Something</p>
                 </div>
                 <Col md={6} xs={6} className="mt-5">
-                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="..." />
+                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
                 </Col>
               </Col>
 
@@ -83,7 +87,7 @@ const masterCoding = () => {
                     src="/assets/card-bg3.png"
                     width="134"
                     height="91"
-                    alt="..."
+                    alt="Code Geeks 9ja"
                     className="mt-2"
                   />
                 </Col>
@@ -100,7 +104,7 @@ const masterCoding = () => {
                     src="/assets/card-bg4.png"
                     width="139"
                     height="94"
-                    alt="..."
+                    alt="Code Geeks 9ja"
                     className="mt-2"
                   />
                 </Col>
@@ -122,7 +126,7 @@ const masterCoding = () => {
                                 <p className="fs-small mt-2">Break Something</p>
                                 </div>
                                 <div className="col-6 mt-2">
-                                <Image src="/assets/card-bg1.png" width="143" height="90" alt=".."/>
+                                <Image src="/assets/card-bg1.png" width="143" height="90" alt="Code Geeks 9ja"
                                 </div>
                              </div>
                                                      
@@ -132,7 +136,7 @@ const masterCoding = () => {
                                 <p className="fs-small mt-2">Fixed Something</p>
                                 </div>
                                 <div className="col-6 mt-2">
-                                <Image src="/assets/card-bg2.png" width="140" height="90" alt="..."/>
+                                <Image src="/assets/card-bg2.png" width="140" height="90" alt="Code Geeks 9ja"
                                 </div>
                             </div>  
 
@@ -142,7 +146,7 @@ const masterCoding = () => {
                                 <p className="fs-small mt-2">Just Do Whatever</p>
                                 </div>
                                 <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg3.png" width="147" height="94" alt="..." className="mt-2"/>
+                                <Image src="/assets/card-bg3.png" width="147" height="94" alt="Code Geeks 9ja" className="mt-2"/>
                                 </div>
                             </div>                            
                             <div className="col-6 text-center mt-5">
@@ -151,7 +155,7 @@ const masterCoding = () => {
                                 <p className="fs-small mt-2">Practice And Code <br /> Everyday</p>
                                 </div>
                                 <div className="col-6 mt-5">
-                                <Image src="/assets/card-bg4.png" width="153" height="94" alt="..." className="mt-2"/>
+                                <Image src="/assets/card-bg4.png" width="153" height="94" alt="Code Geeks 9ja" className="mt-2"/>
                                 </div>
                             </div>                            
                         </div>

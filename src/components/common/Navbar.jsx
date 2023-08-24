@@ -3,15 +3,13 @@ import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    // <section className="pb-4 w-full p-0">
-    //<div className="container">
     <nav className="navbar navbar-expand-lg pt-2 mx-auto bx-container">
       <div className="container-fluid bg-blue-600 mt-2">
         <a className="navbar-brand" href="/">
           <img
             src="/assets/logo.png"
-            alt="..."
-            className="img-fluid my-2 ms-md"
+            alt="Code Geeks 9ja"
+            className="img-fluid my-2 ms-md-4"
             style={{ width: "6rem", height: "3rem" }}
           />
         </a>
@@ -42,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item me-4 ">
-            <Link href="/" className="nav-link text-white active">
+            <Link href="/about" className="nav-link text-white active">
               ABOUT
             </Link>
           </li>
@@ -57,13 +55,11 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <button className="btnn mt-md-0 mt-2" type="submit">
+        <button className="btnn btnn1 mt-md-0 mt-2" type="submit">
           <a href="/register">Get Started </a>
         </button>
       </div>
     </nav>
-    //</div> */}
-    //</section> */}
   );
 };
 
