@@ -1,9 +1,8 @@
-import { Footer, Navbar } from '../components/common';
+import { Footer } from '../components/common';
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <Navbar /> */}
       {children}
       <Footer />
     </>

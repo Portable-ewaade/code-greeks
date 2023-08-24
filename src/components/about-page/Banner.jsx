@@ -1,34 +1,26 @@
-// import Image from "next/image";
 import "animate.css";
 import { Col, Row } from "react-bootstrap";
 
 const banner = () => {
   return (
-    <section className="pb-md-5 pb-0 bx-container">
-      
+    <section className="pb-md-5 pb-0 bx-container position-relative">
       <Row className="align-items-center py-3 mt-3">
         <div className="text-center my-md-4 my-2 ">
           <h3 className="text-white fw-bold">About Code Geeks 9ja</h3>
         </div>
-       
-        <Col md={6} className=" mt-5 p-0 mb-5 mb-md-0">
-        <div className="about-banner mt-3 mb-5 mb-md-0">
+
+        <Col md={6} className="animate__animated animate__zoomIn p-0 mt-4 mb-5 mb-md-0 about-banner">
+          <div className=" mt-3 mb-5 mb-md-0">
             <img
               src="/assets/laptop-setup-2.png"
               alt="Code Geeks 9ja"
-              className="img-fluid p-5 p-md-0 "
-              style={{width: "32rem", height: "auto"}}
+              className="img-fluid p-3 p-md-0 "
+              style={{ width: "32rem", height: "auto" }}
             />
-            {/* <img
-              src="/assets/laptop-setup-2.png"
-              alt="Code Geeks 9ja"
-              className="img-fluid p-4 p-md-0 position-absolute start-0 top-0 mt-3"
-              style={{width: "35rem", height: "auto"}}
-            /> */}
           </div>
         </Col>
 
-        <Col md={6} className=" mt-5 mt-md-0 pt-md-0 pt-5 px-md-2 mb-5 mb-md-0">
+        <Col md={6} className=" animate__animated animate__zoomIn mt-5 mt-md-0 pt-md-0 pt-5 px-md-2 mb-5 mb-md-0">
           <div className="dark-shadow-lg border text-white rounded-4 p-md-4 mt-4 p-3 mb-3">
             <p className="fs-small">
               Code Geeks 9ja is a tech training institute that offers training
@@ -59,9 +51,7 @@ const banner = () => {
           </div>
         </Col>
       </Row>
-     
     </section>
-  
   );
 };
 

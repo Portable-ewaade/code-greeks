@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { BsLaptop } from "react-icons/bs";
+// import { BsLaptop } from "react-icons/bs";
 import "animate.css";
 import { Col, Container, Row } from "react-bootstrap";
 // import TrackVisibility from "react-on-screen";

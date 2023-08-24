@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import "animate.css";
 import { Col, Row } from "react-bootstrap";
 import { BsPencilSquare } from "react-icons/bs";
@@ -9,7 +8,7 @@ const banner = () => {
       <Row className="p-0 align-items-center py-3 py-md-5">
         <Col
           md={8}
-          className=" mt-5 animate__animated animate__slideInRight m3 m-md-0"
+          className=" mt-5 animate__animated animate__zoomIn m3 m-md-0"
         >
           <div
             className="mt-0 mt-md-5"
@@ -36,7 +35,7 @@ const banner = () => {
 
         <Col
           md={4}
-          className=" mt-md-5 animate__animated animate__slideInRight m-md-0 px-3 px-md-2"
+          className=" mt-md-5 animate__animated animate__zoomIn m-md-0 px-3 px-md-2"
         >
           <div className="dark-shadow-lg card-border text-black rounded-4 w-100 p-0">
             <div

@@ -1,8 +1,6 @@
 import { Navbar } from '@/components/common';
 import RegisterBanner from '@/components/register/RegisterBanner';
 import RegsiterForm from '@/components/register/RegsiterForm';
-import TestForm from '@/components/register/TestForm';
-import { Container } from 'react-bootstrap';
 
 const RegisterPage = () => {
   return (

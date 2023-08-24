@@ -22,4 +22,3 @@ export const newsContent = [
   },
 ];
 
-// export const reviewsContent = [];

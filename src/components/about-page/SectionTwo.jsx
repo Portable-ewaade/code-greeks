@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import "animate.css";
 import { Col, Row } from "react-bootstrap";
 
@@ -7,9 +6,6 @@ const SectionTwo = () => {
     <section style={{ background: "#0F0113" }} className="position-relative">
       <div className="pb-md-5 bx-container">
         <Row className="align-items-center py-3 py-md-0 ">
-          {/* <div className="text-center mb-4">
-         <h3 className="text-white fw-bold">About Code Geeks 9ja</h3>
-        </div>  */}
           <Col md={4} className=" mt-5 px-3 pt-5 px-md-2">
             <div className="dark-shadow-lg border text-white rounded-4 p-md-4 p-3 mt-5 ">
               <p className="text-color text-center">How Code Geeks 9ja Works</p>
@@ -40,14 +36,6 @@ const SectionTwo = () => {
               className="img-fluid p-4 p-md-0 "
               style={{ width: "16rem", height: "auto" }}
             />
-            <div className="  ">
-              {/* <img
-              src="/assets/african-american.png"
-              alt="Code Geeks 9ja"
-              className="img-fluid p-4 p-md-0 position-absolute start-0 top-0 mt-3"
-              style={{width: "35rem", height: "auto"}}
-            /> */}
-            </div>
           </Col>
           <Col md={4} className=" mt- p-0 laptop-setup">
             <div className="mt- mt-3 mb-">
@@ -55,14 +43,8 @@ const SectionTwo = () => {
                 src="/assets/laptop-setup.png"
                 alt="Code Geeks 9ja"
                 className="img-fluid p-5 p-md-0 "
-                style={{ width: "36rem", height: "auto" }}
+                
               />
-              {/* <img
-              src="/assets/laptop-setup-2.png"
-              alt="Code Geeks 9ja"
-              className="img-fluid p-4 p-md-0 position-absolute start-0 top-0 mt-3"
-              style={{width: "35rem", height: "auto"}}
-            /> */}
             </div>
           </Col>
         </Row>

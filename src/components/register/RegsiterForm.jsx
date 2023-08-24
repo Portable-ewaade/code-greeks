@@ -42,7 +42,7 @@ const RegsiterForm = () => {
 
   return (
     <section>
-      <div className="h-50 pb-5 px-3 px-md-5">
+      <div className="h-50 pb-5 px-3 px-md-5 ">
         <Col
           xs={12}
           md={8}
