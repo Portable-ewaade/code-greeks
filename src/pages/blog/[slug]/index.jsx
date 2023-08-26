@@ -13,13 +13,13 @@ const index = () => {
     <section className="review-bg text-white pb-4">
       <div>
         <Navbar />
-        <div className="bx-container d-flex pt-3 pb-5 ps-md-5">
-          <p>
+        <div className="bx-container pt-3 pb-5 ps-md-5">
+          
             <Link href="/">Home</Link> / <Link href="/blog">Blog</Link> /{" "}
             <Link href="/tick">Tips & Tricks</Link> / All the Core Features You
             Need, Check a number
-          </p>
-          <hr className="text-primary" />
+          
+          <hr className="mt-4"/>
         </div>
       </div>
 

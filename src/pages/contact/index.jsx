@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/common';
-import SectionOne from '@/components/contact/SectionOne';
-import SectionTwo from '@/components/contact/SectionTwo';
+// import SectionOne from '@/components/contact/SectionOne';
+import SectionOne from '@/components/contact/SectionTwo';
 import RegsiterForm from '@/components/register/RegsiterForm';
 
 const index = () => {
@@ -15,8 +15,8 @@ const index = () => {
     }}
   >
     <Navbar />
+    {/* <SectionOne /> */}
     <SectionOne />
-    <SectionTwo />
 
     <RegsiterForm />
   </section>

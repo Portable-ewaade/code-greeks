@@ -1,5 +1,5 @@
 
-const SectionOne = () => {
+const SectionOne1 = () => {
   return (
     <section>
         <div className="text-center my-5 py-md-5">
@@ -9,4 +9,4 @@ const SectionOne = () => {
   )
 }
 
-export default SectionOne
+export default SectionOne1
