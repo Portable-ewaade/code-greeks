@@ -203,8 +203,11 @@ a {
   border-width: 3px !important;
 }
 
-
-
+/* blog-slug page */
+.slug-container {
+  width: 55%;
+  margin: auto;
+}
 
 /* responsiveness */
 
@@ -229,6 +232,10 @@ a {
   .review-card {
     width: 80%;
     margin: 12rem 0rem 3rem 0rem !important;
+  }
+
+  .slug-container{
+    width: 88% !important;
   }
 }
 

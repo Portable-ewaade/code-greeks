@@ -22,10 +22,10 @@ const Footer = () => {
               <a href="/about">
                 <ul> About</ul>
               </a>
-              <a href="/">
+              <a href="/about">
                 <ul>Our Services</ul>
               </a>
-              <a href="/">
+              <a href="/about">
                 <ul>Gallery</ul>
               </a>
             </div>
@@ -50,10 +50,10 @@ const Footer = () => {
               <h5 className="text-white">Explore</h5>
             </ul>
             <div className="footer-text-color fs-small">
-              <a href="/">
+              <a href="/blog">
                 <ul>Tech News</ul>
               </a>
-              <a href="/">
+              <a href="/blog">
                 <ul>Tech Careers</ul>
               </a>
               <a href="/">
@@ -73,7 +73,7 @@ const Footer = () => {
               <a href="/">
                 <ul>Terms & Conditions</ul>
               </a>
-              <a href="/">
+              <a href="/contact">
                 <ul>Contact Us</ul>
               </a>
             </div>

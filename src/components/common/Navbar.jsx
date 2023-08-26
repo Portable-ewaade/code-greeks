@@ -14,7 +14,7 @@ const Navbar = () => {
           />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler text-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
