@@ -1,7 +1,11 @@
-import Link from "next/link";
-import { BiMenu } from "react-icons/bi";
+import { linkData } from '@/data/mockData';
+import { signOut, useSession } from 'next-auth/react';
+import Link from 'next/link';
+import { BiMenu } from 'react-icons/bi';
 
 const Navbar = () => {
+  const session = useSession();
+
   return (
     <nav className="navbar navbar-expand-lg pt-2 mx-auto bx-container">
       <div className="container-fluid bg-blue-600 mt-2">
@@ -10,11 +14,11 @@ const Navbar = () => {
             src="/assets/logo.png"
             alt="Code Geeks 9ja"
             className="img-fluid my-2 ms-md-4"
-            style={{ width: "6rem", height: "3rem" }}
+            style={{ width: '6rem', height: '3rem' }}
           />
         </Link>
         <button
-          className="navbar-toggler text-white"
+          className="navbar-toggler text-white fs-medium p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -26,49 +30,30 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div
-        className="collapse navbar-collapse mt-4"
-        id="navbarSupportedContent"
-      >
+      <div className="collapse navbar-collapse mt-4" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto fs-normal ms-4 ms-md-0 fw-medium">
-          <li className="nav-item me-4">
-            <Link
-              href="/"
-              className="nav-link text-white active font-weight-600"
-              passHref
-            >
-              HOME
-            </Link>
-          </li>
-          <li className="nav-item me-4">
-            <Link href="/about" className="nav-link text-white active" passHref>
-              ABOUT
-            </Link>
-          </li>
-          <li className="nav-item me-4">
-            <Link
-              href="/reviews"
-              className="nav-link text-white active"
-              passHref
-            >
-              REVIEW
-            </Link>
-          </li>
-          <li className="nav-item me-4">
-            <Link
-              href="/contact"
-              className="nav-link text-white active"
-              passHref
-            >
-              CONTACT
-            </Link>
-          </li>
+          {linkData.map((link, index) => (
+            <li className="nav-item me-4" key={index}>
+              <Link
+                href={link.url}
+                className="text-uppercase nav-link text-white active font-weight-600"
+                passHref
+              >
+                {link.title}
+              </Link>
+            </li>
+          ))}
         </ul>
         <button className="btnn btnn1 mt-md-0 mt-2" type="submit">
           <Link href="/register" passHref>
             Get Started
           </Link>
         </button>
+        {session.status === 'authenticated' && (
+          <button className="btnn ms-md-3 px-3 mt-md-0 mt-2" onClick={signOut}>
+            Logout
+          </button>
+        )}
       </div>
     </nav>
   );

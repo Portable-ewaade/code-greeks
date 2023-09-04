@@ -1,10 +1,14 @@
 import { Col } from 'react-bootstrap';
+import TrackVisibility from 'react-on-screen';
 
 const sectionThree = () => {
   return (
     <>
       <section style={{ background: '#0F0113' }} className="">
         <div className="bx-container dark-shadow-lg rounded-5 pb-4 px-3 masterCode-img">
+        <TrackVisibility>
+            {({ isVisible }) => (
+              <div className={isVisible ? 'animate__slower animate__animated animate__tada' : ''}>
           <Col
             sx={10}
             md={8}
@@ -43,6 +47,9 @@ const sectionThree = () => {
               </p>
             </div>
           </Col>
+              </div>
+            )}
+          </TrackVisibility>
         </div>
       </section>
     </>

@@ -1,4 +1,3 @@
-// import { BsLaptop } from "react-icons/bs";
 import 'animate.css';
 import Link from 'next/link';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -14,27 +13,27 @@ const masterCoding = () => {
               className=" card-border rounded-3 ps-3 pt-3 fs-small mt-md-5 text-start"
               style={{ width: '15rem', height: 'auto' }}
             >
-              <h6 className="fs-small lh-base">In order to truly</h6>
-              <h4 className="text-color fw-bold">Master Coding?</h4>
+              <h6 className="fs-small lh-base">We have what it takes to help you</h6>
+              <h4 className="text-color fw-bold">Master Coding!</h4>
             </div>
             <div className="mt-4">
               <h6 className="fs-large lh-base fw-bold my-4">
-                We Put You into Production Apps Development
+                You Garner Practical Experiences By Building Real Life Apps for Jaflah
               </h6>
             </div>
             <div className="mt-md-3" style={{ height: 'auto' }}>
               <p className="fs-normal footer-text-color">
-                Our Affiliation with Jaflah Software Development Company is the mother company of
-                Code Geeks 9ja. This affiliation births the incredible feature that differentiates
-                Code Geeks 9ja from other IT institutes in the country as it allows our trainees to
-                have direct access to production applications coding. As an engineer, there are
-                issues that you would only face on production apps. As well, there is a limit to
-                what you can learn and experience by building test apps locally on your computers.
-                Things can become a little scarier in live apps. And so you do not get lost when you
-                face job interviews or pushed into a heavy code base, outside our horizons, we give
-                you the opportunity to equip yourself and strengthen your portfolio with proven live
-                applications. This is priceless and will only benefit you greatly as you dive into
-                the ocean of job opportunities in the software development world.
+                Our Affiliation with Jaflah Software Development Company, the mother company of Code
+                Geeks 9ja paved way to the incredible feature that differentiates Code Geeks 9ja
+                from other IT institutes in the country as it allows our trainees to have direct
+                access to production applications coding. As an engineer, there are issues that you
+                would only face on production apps. As well, there is a limit to what you can learn
+                and experience by building test apps locally on your computers. Things can become a
+                little scarier in live apps. And so you do not get lost when you face job interviews
+                or pushed into a heavy code base, outside our horizons, we give you the opportunity
+                to equip yourself and strengthen your portfolio with proven live applications. This
+                is priceless and will only benefit you greatly as you dive into the ocean of job
+                opportunities in the software development world.
               </p>
 
               <Link href="/about" className="fs-normal text-color fw-bold mt-2">
@@ -44,11 +43,29 @@ const masterCoding = () => {
           </Col>
 
           <Col md={6} className=" mt-md-5 ps-md-5 home-image ">
-            <img
+            {/* <img
               src="/assets/computer.jpeg"
               alt="Code Geeks 9ja"
               className="rounded-5 shadow-5 shadow-red"
-            />
+            /> */}
+            <div style={{}}>
+              <video
+                controls
+                autoPlay
+                muted
+                loop
+                src="/assets/vids/review-portable.mp4"
+                style={{
+                  width: '100%',
+                  height: '80%',
+                  objectFit: 'cover',
+                  borderTop: '2px solid #e08cf9',
+                  borderBottom: '2px solid #e08cf9',
+                }}
+                className="rounded-5"
+              />
+            </div>
+
             {/* <Row className="container">
               <Col md={6} xs={6} className="pt-5 text-center ">
                 <div className="border rounded-3 bg-color p-3 position-absolute ms-1">

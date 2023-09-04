@@ -1,3 +1,26 @@
+export const linkData = [
+  {
+    title: 'Home',
+    url: '/',
+  },
+  {
+    title: 'About',
+    url: '/about',
+  },
+  {
+    title: 'Reviews',
+    url: '/reviews',
+  },
+  {
+    title: 'Blog',
+    url: '/blog',
+  },
+  {
+    title: 'Contact',
+    url: '/contact',
+  },
+];
+
 export const newsContent = [
   {
     id: 1,

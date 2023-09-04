@@ -29,16 +29,20 @@ const SectionTwo = () => {
             <img
               src="/assets/african-american.png"
               alt="Code Geeks 9ja"
-              className="img-fluid p-4 p-md-0 "
+              className="img-fluid p-md-0 "
               style={{ width: '16rem', height: 'auto' }}
             />
           </Col>
           <Col md={4} className=" mt- p-0 laptop-setup">
             <div className="mt- mt-3 rounded-5">
               <img
-                src="/assets/laptop-setup.png"
+                src="/assets/code-1.jpg"
                 alt="Code Geeks 9ja"
                 className="img-fluid p-5 p-md-0 rounded-5"
+                style={{
+                  borderTopLeftRadius: '50px !important',
+                  borderBottomLeftRadius: '50px !important',
+                }}
               />
             </div>
           </Col>

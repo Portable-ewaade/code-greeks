@@ -1,47 +1,46 @@
-import axios from 'axios';
+import { registerApplicant } from '@/backend/api';
+import { studentRegisterValues } from '@/utils/initialValues';
+import { validateStudentRegister } from '@/utils/validateValues';
 import { ErrorMessage, Formik } from 'formik';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { Col, Row } from 'react-bootstrap';
-import * as yup from 'yup';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegsiterForm = () => {
-  const [passport, setPassport] = useState();
+  const router = useRouter();
+  const initialValues = studentRegisterValues();
+  const validationSchema = validateStudentRegister();
+  const successNotification = (message) => toast.success(message);
+  const errorNotification = (message) => toast.error(message);
 
-  const user = {
-    name: 'Tee',
-    email: 'tunde@gmail.com',
-    phone: '08143443420',
-  };
-
-  const initialValues = {
-    name: user.name,
-    email: user.email,
-    phone: '',
-    course: '',
-    trainingMedium: '',
-    connection: '',
-    comment: '',
-  };
-
-  const validationSchema = yup.object({
-    name: yup
-      .string()
-      .required('Name is required')
-      .max(30, 'Maximum characters exceeded')
-      .min(5, 'Must not be less than 5'),
-    email: yup.string().required('Email is required').email('Enter a valid email'),
-    phone: yup.string().required('Phone number is required'),
-    course: yup.string().required('What course are you going for?'),
-    connection: yup.string().required('How did you hear about us?'),
-  });
-
-  const handleSubmit = (values) => {
-    console.log('Values: ', values);
-    console.log('Passport: ', passport);
+  const handleSubmit = async (values, { resetForm }) => {
+    const res = await registerApplicant(values);
+    if (res.status === 201) {
+      successNotification(res.data);
+      resetForm();
+      setTimeout(() => {
+        router.push('/');
+      }, 6000);
+    } else {
+      errorNotification(res.data);
+    }
   };
 
   return (
     <section>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className="h-50 pb-5 px-3 px-md-5 ">
         <Col
           xs={12}
@@ -59,19 +58,9 @@ const RegsiterForm = () => {
             initialValues={initialValues}
             validationSchema={validationSchema}
           >
-            {({ values, errors, touched, handleBlur, handleChange, handleSubmit }) => (
+            {({ values, handleBlur, handleChange, handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Row className="mb-md-1">
-                  {/* <Col xs={12} md={6} className="px-2 mb-3">
-                    <div className="text-white fs-small mb-1">Passport Image</div>
-                    <input
-                      type="file"
-                      onChange={(e) => setPassport(e.target.files[0])}
-                      className="contact-input py-1 py-md-2"
-                    />
-                    <ErrorMessage name="email" component="span" className="error" />
-                  </Col> */}
-
                   <Col xs={12} md={6} className="px-2 mb-3">
                     <div className="text-white fs-small mb-1">Full name</div>
                     <input
@@ -80,7 +69,7 @@ const RegsiterForm = () => {
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.name}
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
                     />
                     <ErrorMessage name="name" component="span" className="error" />
                   </Col>
@@ -93,7 +82,7 @@ const RegsiterForm = () => {
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.email}
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
                     />
                     <ErrorMessage name="email" component="span" className="error" />
                   </Col>
@@ -108,7 +97,7 @@ const RegsiterForm = () => {
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.phone}
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
                     />
                     <ErrorMessage name="phone" component="span" className="error" />
                   </Col>
@@ -117,19 +106,20 @@ const RegsiterForm = () => {
                     <div className="text-white fs-small mb-1">Course</div>
                     <select
                       name="course"
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
                       value={values.course}
                       onBlur={handleBlur}
                       onChange={handleChange}
                     >
-                      <option value="Fullstack Web" defaultValue>
-                        Fullstack Web
-                      </option>
+                      <option value="">Select Course</option>
+                      <option value="Fullstack Web">Fullstack Web</option>
                       <option value="Frontend Web">Frontend Web</option>
                       <option value="Backend Web">Backend Web</option>
                       <option value="Fullstack Mobile">Fullstack Mobile</option>
-                      <option value="Frontend Mobile">Frontend Mobile</option>
-                      <option value="Backend Mobile">Backend Mobile</option>
+                      <option value="Frontend Mobile (React Native)">
+                        Frontend Mobile (React Native)
+                      </option>
+                      <option value="Frontend Mobile (Flutter)">Frontend Mobile (Flutter)</option>
                     </select>
                     <ErrorMessage name="course" component="span" className="error" />
                   </Col>
@@ -138,33 +128,48 @@ const RegsiterForm = () => {
                 <Row>
                   <Col xs={12} md={6} className="px-2 mb-3">
                     <div className="text-white fs-small mb-1">Training Medium</div>
-                    <select
+                    <input
+                      type="text"
                       name="trainingMedium"
-                      id=""
-                      className="contact-input py-1 py-md-2"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.trainingMedium}
-                    >
-                      <option value="Virtual" defaultValue>
-                        Virtual
-                      </option>
-                    </select>
+                      className="contact-input py-2"
+                      disabled
+                    />
                     <ErrorMessage name="trainingMedium" component="span" className="error" />
                   </Col>
                   <Col xs={12} md={6} className="px-2 mb-3">
+                    <div className="text-white fs-small mb-1">Preferred Class</div>
+                    <select
+                      name="class"
+                      id=""
+                      className="contact-input py-2"
+                      onBlur={handleBlur}
+                      onChange={handleChange}
+                      value={values.class}
+                    >
+                      <option value="">Select Class Period</option>
+                      <option value="Weekends">Weekends</option>
+                      <option value="Weekdays">Weekdays</option>
+                    </select>
+                    <ErrorMessage name="class" component="span" className="error" />
+                  </Col>
+                </Row>
+
+                <Row>
+                  <Col xs={12} className="px-2 mb-3">
                     <div className="text-white fs-small mb-1">How did you hear about us?</div>
                     <select
                       name="connection"
                       id=""
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.connection}
                     >
-                      <option value="Social Media" defaultValue>
-                        Social Media
-                      </option>
+                      <option value="">Select</option>
+                      <option value="Social Media">Social Media</option>
                       <option value="Internet/Google search">Internet/Google search</option>
                       <option value="Through a friend">Through a friend</option>
                       <option value="Recommendation">Recommendation</option>
@@ -182,7 +187,8 @@ const RegsiterForm = () => {
                       onBlur={handleBlur}
                       onChange={handleChange}
                       value={values.comment}
-                      className="contact-input py-1 py-md-2"
+                      className="contact-input py-2"
+                      rows={5}
                     />
                     <ErrorMessage name="comment" component="span" className="error" />
                   </Col>
