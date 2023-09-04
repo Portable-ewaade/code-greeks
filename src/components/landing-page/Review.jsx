@@ -20,8 +20,8 @@ const Review = () => {
                     <Image
                       src="/assets/trainer1.png"
                       alt="Code Geeks 9ja"
-                      width="173"
-                      height="200"
+                      width="270"
+                      height="270"
                       className="img-fluid"
                     />
                   </Col>
@@ -29,8 +29,8 @@ const Review = () => {
                     <Image
                       src="/assets/trainer2.png"
                       alt="Code Geeks 9ja"
-                      width="175"
-                      height="200"
+                      width="270"
+                      height="270"
                       className="img-fluid"
                     />
                   </Col>
