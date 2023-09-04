@@ -46,7 +46,7 @@ const ReviewCard = () => {
               borderRadius: '10px',
             }}
           >
-            <table id="tbl_exporttable_to_xls">
+            <table id="tbl_exporttable_to_">
               <thead>
                 <tr>
                   <th className="px-3">S/No</th>
