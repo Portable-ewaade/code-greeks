@@ -21,7 +21,7 @@ const Review = () => {
                       src="/assets/trainer1.png"
                       alt="Code Geeks 9ja"
                       width="270"
-                      height="270"
+                      height="370"
                       className="img-fluid"
                     />
                   </Col>
@@ -30,7 +30,7 @@ const Review = () => {
                       src="/assets/trainer2.png"
                       alt="Code Geeks 9ja"
                       width="270"
-                      height="270"
+                      height="370"
                       className="img-fluid"
                     />
                   </Col>
