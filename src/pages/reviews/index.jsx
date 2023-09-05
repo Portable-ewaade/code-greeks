@@ -34,15 +34,11 @@ const index = () => {
               <h6 className=" fw-bold mb-5 mt-4">4.5 out of 5 | {reviews.length} reviews</h6>
             </div>
 
-              <div>
-                <Row>
-                <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
-            {/* <img
-              src="/assets/computer.jpeg"
-              alt="Code Geeks 9ja"
-              className="rounded-5 shadow-5 shadow-red"
-            /> */}
-            <div style={{}}>
+              <div className='bx-container pb-2 px-2 px-md-5 mx-auto'>
+                <Row className='pt-4 pt-md-0'>
+                <Col md={4} className=" mt-md-5 home-image mb-2">
+          
+              <div style={{}}>
               <video
                 controls
                 autoPlay
@@ -50,7 +46,7 @@ const index = () => {
                 loop
                 src="/assets/vids/review-portable.mp4"
                 style={{
-                  width: '50%',
+                  width: '100%',
                   height: '80%',
                   objectFit: 'cover',
                   borderTop: '2px solid #e08cf9',
@@ -60,76 +56,19 @@ const index = () => {
               />
             </div>
 
-            {/* <Row className="container">
-              <Col md={6} xs={6} className="pt-5 text-center ">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Break Something</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className=" pt-5 text-center">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Fixed Something</p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Just Do Whatever</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image
-                    src="/assets/card-bg3.png"
-                    width="134"
-                    height="91"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">
-                    Practice And Code <br /> Everyday
-                  </p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image
-                    src="/assets/card-bg4.png"
-                    width="139"
-                    height="94"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-            </Row> */}
+           
           </Col>
-          <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
-            {/* <img
-              src="/assets/computer.jpeg"
-              alt="Code Geeks 9ja"
-              className="rounded-5 shadow-5 shadow-red"
-            /> */}
+          <Col md={4} className=" mt-md-5 home-image mb-2">
+           
             <div style={{}}>
               <video
                 controls
                 autoPlay
                 muted
                 loop
-                src="/assets/vids/review-portable.mp4"
+                src="/assets/vids/review-souljay.mp4"
                 style={{
-                  width: '50%',
+                  width: '100%',
                   height: '80%',
                   objectFit: 'cover',
                   borderTop: '2px solid #e08cf9',
@@ -139,76 +78,18 @@ const index = () => {
               />
             </div>
 
-            {/* <Row className="container">
-              <Col md={6} xs={6} className="pt-5 text-center ">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Break Something</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className=" pt-5 text-center">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Fixed Something</p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Just Do Whatever</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image
-                    src="/assets/card-bg3.png"
-                    width="134"
-                    height="91"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">
-                    Practice And Code <br /> Everyday
-                  </p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image
-                    src="/assets/card-bg4.png"
-                    width="139"
-                    height="94"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-            </Row> */}
           </Col>
-          <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
-            {/* <img
-              src="/assets/computer.jpeg"
-              alt="Code Geeks 9ja"
-              className="rounded-5 shadow-5 shadow-red"
-            /> */}
+          <Col md={4} className=" mt-md-5 home-image mb-2">
+           
             <div style={{}}>
               <video
                 controls
                 autoPlay
                 muted
                 loop
-                src="/assets/vids/review-portable.mp4"
+                src="/assets/vids/Nasiru_Testimony.mp4"
                 style={{
-                  width: '50%',
+                  width: '100%',
                   height: '80%',
                   objectFit: 'cover',
                   borderTop: '2px solid #e08cf9',
@@ -218,60 +99,6 @@ const index = () => {
               />
             </div>
 
-            {/* <Row className="container">
-              <Col md={6} xs={6} className="pt-5 text-center ">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Break Something</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className=" pt-5 text-center">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Fixed Something</p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
-                </Col>
-              </Col>
-
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">Just Do Whatever</p>
-                </div>
-                <Col md={6} xs={6} className=" mt-5">
-                  <Image
-                    src="/assets/card-bg3.png"
-                    width="134"
-                    height="91"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-              <Col md={6} xs={6} className="text-center mt-5">
-                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
-                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
-                  <p className="fs-small mt-2">
-                    Practice And Code <br /> Everyday
-                  </p>
-                </div>
-                <Col md={6} xs={6} className="mt-5">
-                  <Image
-                    src="/assets/card-bg4.png"
-                    width="139"
-                    height="94"
-                    alt="Code Geeks 9ja"
-                    className="mt-2"
-                  />
-                </Col>
-              </Col>
-            </Row> */}
           </Col>
           
                 </Row>
