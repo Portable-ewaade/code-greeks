@@ -48,7 +48,19 @@ const Review = () => {
                   <Row>
                     <Col md={6}>
                       <div style={{ borderBottom: '1px solid #e08cf9' }} className="mx-1 rounded-3">
-                        <h5 className=" mt-5 mt-md-5">More Than Just Trainings</h5>
+                      <div
+                          className=" mt-5 mt-md-5 mb-1"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'flex-start',
+                            alignItems: 'flex-start',
+                          }}
+                        >
+                          <div className="me-2">
+                            <img src="/assets/icons/training-icon1.png" alt="Code Geeks 9ja"  />
+                          </div>
+                          <h6 >More Than Just Trainings</h6>
+                        </div>
                         <p className="fs-small footer-text-color">
                           Access proper mentorship and guidance from some of the best and
                           experienced hands in the business.
@@ -58,17 +70,17 @@ const Review = () => {
                     <Col md={6}>
                       <div style={{ borderBottom: '1px solid #e08cf9' }} className="mx-1 rounded-3">
                         <div
-                          className=" mt-5 mt-md-5"
+                          className=" mt-5 mt-md-5 mb-1"
                           style={{
                             display: 'flex',
                             justifyContent: 'flex-start',
                             alignItems: 'flex-start',
                           }}
                         >
-                          <div style={{ height: '25px', width: '25px' }} className="me-2">
-                            <img src="/assets/trainer1.png" alt="" height={25} width={25} />
+                          <div className="me-2">
+                            <img src="/assets/icons/expertise.png" alt="Code Geeks 9ja" />
                           </div>
-                          <h5>Personalised Experience</h5>
+                          <h6>Personalised Experience</h6>
                         </div>
                         <p className="fs-small footer-text-color">
                           Trainings are stuctured in away that gives you that sort after personified
@@ -78,7 +90,19 @@ const Review = () => {
                     </Col>
                     <Col md={6}>
                       <div style={{ borderBottom: '1px solid #e08cf9' }} className="mx-1 rounded-3">
-                        <h5 className=" mt-5 mt-md-5">Highly Experienced Trainers</h5>
+                      <div
+                          className=" mt-5 mt-md-5 mb-1"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'flex-start',
+                            alignItems: 'flex-start',
+                          }}
+                        >
+                          <div className="me-2">
+                            <img src="/assets/icons/reliability.png" alt="Code Geeks 9ja"  />
+                          </div>
+                        <h6>Highly Experienced Trainers</h6>
+                        </div>
                         <p className="fs-small footer-text-color">
                           Access proper mentorship and guidance from some of the best and
                           experienced hands in the business.
@@ -87,7 +111,19 @@ const Review = () => {
                     </Col>
                     <Col md={6}>
                       <div style={{ borderBottom: '1px solid #e08cf9' }} className="mx-1 rounded-3">
-                        <h5 className=" mt-5 mt-md-5">Full Career Mentorship</h5>
+                      <div
+                          className=" mt-5 mt-md-5 mb-1"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'flex-start',
+                            alignItems: 'flex-start',
+                          }}
+                        >
+                          <div className="me-2">
+                            <img src="/assets/icons/mentorship.png" alt="Code Geeks 9ja"  />
+                          </div>
+                        <h6>Full Career Mentorship</h6>
+                        </div>
                         <p className="fs-small footer-text-color">
                           In addition to well structured class sessions, we become full career
                           mentor

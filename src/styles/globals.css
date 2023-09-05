@@ -215,7 +215,9 @@ tr:nth-child(odd) {
   width: 77%;
   margin: 8rem 0rem 3rem 0rem !important;
 }
-
+.avaliable-courses-card{
+  height: 13rem !important;
+}
 /* Register page */
 .form-container {
   background: #250130;
@@ -269,6 +271,7 @@ tr:nth-child(odd) {
   border: 1px solid #e08cf9;
   padding: 20px 20px;
 }
+
 
 /* countdown timer */
 .expired-notice {
@@ -360,12 +363,7 @@ tr:nth-child(odd) {
   .course-section{
     height: 83rem !important;
   }
-  .avaliable-courses-card{
-    height: 80rem !important;
-  }
-  .student-review{
-    height: 32rem !important;
-  }
+
 }
 
 /* Tablet */

@@ -36,7 +36,7 @@ const PostCard = () => {
       {posts &&
         posts.map((post) => (
           <div className="postCard mb-3" key={post._id}>
-            <img src={post.img} width={100} height={50} alt="" />
+            <img src={post.img} width={100} height={50} alt="Code Geeks 9ja" />
             <div
               style={{
                 width: '100%',

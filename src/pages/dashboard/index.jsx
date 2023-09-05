@@ -55,7 +55,7 @@ const Dashboard = () => {
                         <div className="text-dark fw-bold py-2">Total Registered Students</div>
                         <div className="text-white fs-xlarge fw-bold ">65</div>
                       </div>
-                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="" />
+                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="Code Geeks 9ja" />
                     </div>
                   </Col>
                   <Col md={4} className="mb-3 text-white">
@@ -72,7 +72,7 @@ const Dashboard = () => {
                         <div className="text-dark fw-bold py-2">Total Registered Students</div>
                         <div className="text-white fs-xlarge fw-bold ">65</div>
                       </div>
-                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="" />
+                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="Code Geeks 9ja" />
                     </div>
                   </Col>
                   <Col md={4} className="mb-3 text-white">
@@ -89,7 +89,7 @@ const Dashboard = () => {
                         <div className="text-dark fw-bold py-2">Total Registered Students</div>
                         <div className="text-white fs-xlarge fw-bold ">65</div>
                       </div>
-                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="" />
+                      <Image src="/assets/icons/profile.png" width={50} height={50} alt="Code Geeks 9ja" />
                     </div>
                   </Col>
                 </Row>

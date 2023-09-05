@@ -115,8 +115,8 @@ const courses = () => {
               </a>
             </button>
           </div>
-          <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color px-4 py-3 py-md-4 text-white dark-shadow-lg avaliable-courses-card">
+          <Col md={3} xs={6} className="mb-3 text-center">
+            <div className="card border bg-color px-4 py-2 py-md-4 text-white dark-shadow-lg avaliable-courses-card">
               <h3>
                 <img
                   src="/assets/reactjs.png"
@@ -133,7 +133,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
+            <div className="card border bg-color px-4 py-2 py-md-4 text-white dark-shadow-lg avaliable-courses-card">
               <h2>
                 <img
                   src="/assets/node.png"
@@ -150,7 +150,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
+            <div className="card border bg-color px-4 py-2 py-md-4 text-white dark-shadow-lg avaliable-courses-card ">
               <h3>
                 <img
                   height={43}
@@ -169,7 +169,7 @@ const courses = () => {
             </div>
           </Col>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color p-4 text-white dark-shadow-lg ">
+            <div className="card border bg-color px-4 py-2 py-md-4 text-white dark-shadow-lg avaliable-courses-card ">
               <h3>
                 <img
                   src="/assets/flutter.png"

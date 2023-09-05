@@ -23,6 +23,7 @@ const index = () => {
         }}
       >
         <Navbar />
+
         {reviews && (
           <>
             <div className="text-white px-3 px-md-0 mt-5 mt-md-0 mb-5 text-center">
@@ -33,6 +34,248 @@ const index = () => {
               <h6 className=" fw-bold mb-5 mt-4">4.5 out of 5 | {reviews.length} reviews</h6>
             </div>
 
+              <div>
+                <Row>
+                <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
+            {/* <img
+              src="/assets/computer.jpeg"
+              alt="Code Geeks 9ja"
+              className="rounded-5 shadow-5 shadow-red"
+            /> */}
+            <div style={{}}>
+              <video
+                controls
+                autoPlay
+                muted
+                loop
+                src="/assets/vids/review-portable.mp4"
+                style={{
+                  width: '50%',
+                  height: '80%',
+                  objectFit: 'cover',
+                  borderTop: '2px solid #e08cf9',
+                  borderBottom: '2px solid #e08cf9',
+                }}
+                className="rounded-5"
+              />
+            </div>
+
+            {/* <Row className="container">
+              <Col md={6} xs={6} className="pt-5 text-center ">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Break Something</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className=" pt-5 text-center">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Fixed Something</p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Just Do Whatever</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image
+                    src="/assets/card-bg3.png"
+                    width="134"
+                    height="91"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">
+                    Practice And Code <br /> Everyday
+                  </p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image
+                    src="/assets/card-bg4.png"
+                    width="139"
+                    height="94"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+            </Row> */}
+          </Col>
+          <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
+            {/* <img
+              src="/assets/computer.jpeg"
+              alt="Code Geeks 9ja"
+              className="rounded-5 shadow-5 shadow-red"
+            /> */}
+            <div style={{}}>
+              <video
+                controls
+                autoPlay
+                muted
+                loop
+                src="/assets/vids/review-portable.mp4"
+                style={{
+                  width: '50%',
+                  height: '80%',
+                  objectFit: 'cover',
+                  borderTop: '2px solid #e08cf9',
+                  borderBottom: '2px solid #e08cf9',
+                }}
+                className="rounded-5"
+              />
+            </div>
+
+            {/* <Row className="container">
+              <Col md={6} xs={6} className="pt-5 text-center ">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Break Something</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className=" pt-5 text-center">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Fixed Something</p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Just Do Whatever</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image
+                    src="/assets/card-bg3.png"
+                    width="134"
+                    height="91"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">
+                    Practice And Code <br /> Everyday
+                  </p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image
+                    src="/assets/card-bg4.png"
+                    width="139"
+                    height="94"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+            </Row> */}
+          </Col>
+          <Col md={4} className=" mt-md-5 ps-md-5 home-image ">
+            {/* <img
+              src="/assets/computer.jpeg"
+              alt="Code Geeks 9ja"
+              className="rounded-5 shadow-5 shadow-red"
+            /> */}
+            <div style={{}}>
+              <video
+                controls
+                autoPlay
+                muted
+                loop
+                src="/assets/vids/review-portable.mp4"
+                style={{
+                  width: '50%',
+                  height: '80%',
+                  objectFit: 'cover',
+                  borderTop: '2px solid #e08cf9',
+                  borderBottom: '2px solid #e08cf9',
+                }}
+                className="rounded-5"
+              />
+            </div>
+
+            {/* <Row className="container">
+              <Col md={6} xs={6} className="pt-5 text-center ">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Break Something</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image src="/assets/card-bg1.png" width="132" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className=" pt-5 text-center">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Fixed Something</p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image src="/assets/card-bg2.png" width="131" height="100" alt="Code Geeks 9ja" />
+                </Col>
+              </Col>
+
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color p-3 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">Just Do Whatever</p>
+                </div>
+                <Col md={6} xs={6} className=" mt-5">
+                  <Image
+                    src="/assets/card-bg3.png"
+                    width="134"
+                    height="91"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+              <Col md={6} xs={6} className="text-center mt-5">
+                <div className="border rounded-3 bg-color px-3 py-2 position-absolute ms-1">
+                  <BsLaptop style={{ width: '3rem', height: 'auto' }} />
+                  <p className="fs-small mt-2">
+                    Practice And Code <br /> Everyday
+                  </p>
+                </div>
+                <Col md={6} xs={6} className="mt-5">
+                  <Image
+                    src="/assets/card-bg4.png"
+                    width="139"
+                    height="94"
+                    alt="Code Geeks 9ja"
+                    className="mt-2"
+                  />
+                </Col>
+              </Col>
+            </Row> */}
+          </Col>
+          
+                </Row>
+              </div>
             <div style={{ background: '#0F0113' }} className="pt-5">
               <div className="text-center bx-container mt-3">
                 <Row className="pb-3 px-2 px-md-5 mx-auto">

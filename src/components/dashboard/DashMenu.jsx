@@ -58,7 +58,7 @@ const DashMenu = () => {
                 width: '20px',
               }}
             >
-              <Image src={link.img} alt="" width={20} height={20} />
+              <Image src={link.img} alt="Code Geeks 9ja" width={20} height={20} />
             </div>
             <div className="ml-5 fw-bold">{link.title}</div>
           </div>

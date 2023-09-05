@@ -12,7 +12,7 @@ const SectionTwo = () => {
 
       <div className="review-bg">
         <div className="bx-container pt-5 pb-2 px-md-5">
-          <div className=" text-center text-white my-5">
+          <div className=" text-center text-white my-5 ">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -34,7 +34,7 @@ const SectionTwo = () => {
           </div>
 
           <Row className="py-5 mt-5 text-white">
-            <Col md={6} className="p-0 p-md-3">
+            <Col md={6} className="p-0 p-md-3 mb-3">
               <div>
                 <h4>Get In Touch With Us Today</h4>
                 <p style={{ fontSize: "16px", color: "#bbb" }}>
@@ -71,7 +71,7 @@ const SectionTwo = () => {
                 <Col md={6} className="mb-4">
                   <div
                     className="d-flex justify-content-center rounded-3 px-4 py-3 "
-                    style={{ borderBottom: "2px solid #e08cf9" }}
+                    style={{ borderRight: "2px solid #e08cf9" }}
                   >
                     <h5>
                       <GoMail className="me-3" size={25} />
@@ -94,7 +94,7 @@ const SectionTwo = () => {
                 <Col md={6} className="mb-4">
                   <div
                     className="d-flex justify-content-center rounded-3 px-4 py-3 "
-                    style={{ borderBottom: "2px solid #e08cf9" }}
+                    style={{ borderLeft: "2px solid #e08cf9" }}
                   >
                     <h5>
                       <FaPhone className="me-3" size={25} />
@@ -113,7 +113,7 @@ const SectionTwo = () => {
                 <Col md={6} className="mb-4">
                   <div
                     className="d-flex justify-content-center rounded-3 px-4 py-3 "
-                    style={{ borderBottom: "2px solid #e08cf9" }}
+                    style={{ borderRight: "2px solid #e08cf9" }}
                   >
                     <h5>
                       <FaWhatsapp className="me-3" size={25} />

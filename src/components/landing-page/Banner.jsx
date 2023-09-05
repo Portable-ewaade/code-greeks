@@ -1,7 +1,7 @@
 import "animate.css";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
-import { BsPencilSquare } from "react-icons/bs";
+import { BsArrowUpCircle, BsPencilSquare } from "react-icons/bs";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 // import MyTimer from "./count-down/MyTimer";
@@ -61,7 +61,7 @@ const banner = () => {
 
 
   return (
-    <section className="pb-5 bx-container p-0">
+    <section className="pb-5 bx-container p-0 position-relative">
       <Row className="p-0 align-items-center py-3 py-md-5">
         <Col md={8} className=" mt-5 m3 m-md-0">
           <TrackVisibility>
@@ -217,6 +217,10 @@ const banner = () => {
           </TrackVisibility>
         </Col>
       </Row>
+
+      <div className="totop text-white text-end px-3" >
+       <a href='#' className='fs-xxlarge'> <BsArrowUpCircle href='#' /></a>
+      </div>
     </section>
   );
 };
