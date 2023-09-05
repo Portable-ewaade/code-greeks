@@ -116,7 +116,7 @@ const courses = () => {
             </button>
           </div>
           <Col md={3} xs={6} className="mb-3 text-center ">
-            <div className="card border bg-color px-4 py-3 py-md-4 text-white dark-shadow-lg ">
+            <div className="card border bg-color px-4 py-3 py-md-4 text-white dark-shadow-lg avaliable-courses-card">
               <h3>
                 <img
                   src="/assets/reactjs.png"

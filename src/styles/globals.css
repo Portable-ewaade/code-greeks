@@ -360,6 +360,9 @@ tr:nth-child(odd) {
   .course-section{
     height: 83rem !important;
   }
+  .avaliable-courses-card{
+    height: 80rem !important;
+  }
   .student-review{
     height: 32rem !important;
   }

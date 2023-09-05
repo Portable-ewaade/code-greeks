@@ -119,7 +119,7 @@ const Review = () => {
               <>
                 <div className="pt-5 pt-md-0 text-white text-center">
                   <h5 className="fs-normal fw-bold mt-5">STUDENT REVIEWS</h5>
-                  <h6 className="fs-normal fw-bold mb-5 mt-4">4.5 out of 5 | 5,281 reviews</h6>
+                  <h6 className="fs-normal fw-bold mb-5 mt-4">4.5 out of 5 | {reviews.length} reviews</h6>
                 </div>
 
                 <ReviewCardPublic reviews={reviews} limit={3} />
