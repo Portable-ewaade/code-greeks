@@ -1,93 +1,55 @@
-// // import React from "react";
-// // import CountdownTimer from "./CountdownTimer";
-
-// // const MyTimer = () => {
-// //   // const TWENTYSIX_DAYS_IN_MS = 26 * 24 * 60 * 60 * 1000;
-// //   const NOW_IN_MS = new Date().getTime();
-
-// //   // const dateTimeAfterTwentySixDays = NOW_IN_MS + TWENTYSIX_DAYS_IN_MS;
-
-// //   return (
-// //     <div>
-// //       <CountdownTimer targetDate={dateTimeAfterTwentySixDays} />
-// //     </div>
-// //   );
-// // };
-// // export default MyTimer;
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import CountdownTimer from './CountdownTimer';
-
-
-// const MyTimer = () => {
-//   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-
-//   // Use useState to manage the target date on the client side
-//   const [targetDate, setTargetDate] = useState(null);
-
-//   useEffect(() => {
-//     // Calculate the target date when the component mounts on the client side
-//     const NOW_IN_MS = new Date().getTime();
-//     const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
-//     // Set the target date in the component's state
-//     setTargetDate(dateTimeAfterThreeDays);
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Countdown Timer</h1>
-//       {targetDate ? (
-//         <CountdownTimer targetDate={targetDate} />
-//       ) : (
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// }
-// export default MyTimer;
-
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import CountdownTimer from './CountdownTimer';
 
-
 const MyTimer = () => {
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+const [expiryTime, setExpiryTime] = useState("30 Sep 2023 15:00:00");
+// const [countdownTime, setCountdownTime] = useState({
+//   countdownDays: "",
+//   countdownHours: "",
+//   countdownMinutes: "",
+//   countdownSeconds: "",
+// });
 
-  // Use useState to manage the target date on the client side
-  const [targetDate, setTargetDate] = useState(null);
 
-  useEffect(() => {
-    // Try to retrieve the target date from localStorage
-    const storedTargetDate = localStorage.getItem('targetDate');
+// const countdownTimer = () => {
+//   const timeInterval = setInterval(() => {
+//     const countdownDateTime = new Date(expiryTime).getTime();
+//     const currentTime = new Date().getTime();
+//     const remainingDayTime = countdownDateTime - currentTime;
+//     const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
+//     const totalHours = Math.floor((remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const totalMinutes = Math.floor((remainingDayTime % (1000 * 60 * 60)) / (1000 * 60));
+//     const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
 
-    if (storedTargetDate) {
-      // If a target date is found in localStorage, use it
-      setTargetDate(Number(storedTargetDate));
-    } else {
-      // Calculate the target date when the component mounts on the client side
-      const NOW_IN_MS = new Date().getTime();
-      const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+//     const runningCountdownTime = {
+//       countdownDays: totalDays,
+//       countdownHours: totalHours,
+//       countdownMinutes: totalMinutes,
+//       countdownSeconds: totalSeconds,
+//     };
 
-      // Set the target date in the component's state
-      setTargetDate(dateTimeAfterThreeDays);
+//     setCountdownTime(runningCountdownTime);
 
-      // Store the target date in localStorage for future page reloads
-      localStorage.setItem('targetDate', dateTimeAfterThreeDays);
-    }
-  }, []);
+//     if (remainingDayTime < 0) {
+//       clearInterval(timeInterval);
+//       setExpiryTime(false);
+//       setCountdownTime ({
+//        countdownDays: "",
+//        countdownHours: "",
+//        countdownMinutes: "",
+//        countdownSeconds: "",
+//      });
+//     }
+//   }, 1000);
+
+// };
+
+
 
   return (
     <div>
-      <h1>Countdown Timer</h1>
-      {targetDate ? (
-        <CountdownTimer targetDate={targetDate} />
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
+    <CountdownTimer targetDate={expiryTime} />
+  </div>
   );
-}
+ }
 export default MyTimer;

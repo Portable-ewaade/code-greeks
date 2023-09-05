@@ -6,7 +6,7 @@ import DateTimeDisplay from './DateTimeDisplay.js';
 const ExpiredNotice = () => {
     return (
       <div className="expired-notice">
-        <span>Expired!!!</span>
+        <span>Course already commenced!</span>
         <p>Please join us for the next cohort </p>
       </div>
     );
