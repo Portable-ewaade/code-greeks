@@ -123,14 +123,6 @@ const banner = () => {
                   >
                     <h6 className="fw-bold ">Full Stack Web Development</h6>
                     <p className="fs-6">Course start in </p>
-                    {/* <h5>A timer here</h5> */}
-                    {/* <div style={{ display: 'flex', gap: '20px' }}>
-                      <div>{countdownTime.countdownDays}</div>
-                      <div>{countdownTime.countdownHours}</div>
-                      <div>{countdownTime.countdownMinutes}</div>
-                      <div>{countdownTime.countdownSeconds}</div>
-                    </div> */}
-
                     <MyTimer />
                    
                   </div>
@@ -217,10 +209,7 @@ const banner = () => {
           </TrackVisibility>
         </Col>
       </Row>
-
-      <div className="totop text-white text-end px-3" >
-       <a href='#' className='fs-xxlarge'> <BsArrowUpCircle href='#' /></a>
-      </div>
+      
     </section>
   );
 };

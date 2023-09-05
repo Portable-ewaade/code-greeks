@@ -107,9 +107,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div className="totop text-white text-end px-3" >
+      <div className="text-white text-end px-3" >
        <a href='#' className='fs-xxlarge'> <BsArrowUpCircle href='#' /></a>
-      </div> */}
+      </div>
       <FloatingWhatsApp
         phoneNumber="2349046832081"
         accountName="Code Geeks 9ja"

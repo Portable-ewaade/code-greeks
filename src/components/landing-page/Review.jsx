@@ -10,7 +10,7 @@ const Review = () => {
 
   return (
     <>
-      <section style={{ height: '25rem' }} className="review-bg position-relative student-review">
+      <section style={{ height: '24rem' }} className="review-bg position-relative student-review">
         <div className="bx-container">
           <div className="review-card rounded-4 position-absolute top-0 start-50 translate-middle">
             <Row className="card-border rounded-3">

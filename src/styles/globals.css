@@ -363,7 +363,9 @@ tr:nth-child(odd) {
   .course-section{
     height: 83rem !important;
   }
-
+  .student-review{
+    height: 32rem !important;
+  }
 }
 
 /* Tablet */
