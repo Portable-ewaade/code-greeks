@@ -20,7 +20,6 @@ const index = () => {
         }}
       >
         <Navbar />
-        {/* <SectionOne /> */}
         <SectionOne />
 
         {/* <RegsiterForm /> */}
